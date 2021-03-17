@@ -8,7 +8,7 @@ else:
  >>> Input a list of numbers and test if a number is equal to the sum of the cubes of its digits. 
  Find the smallest and largest such number from the given list of numbers. 
 val=eval(input("enter a list:"))
-list=[]
+list=[]                                   #  list=[67,153,311,96,370,4050,371,955,407]
 s=len(val)
 for i in range(s):
     num=val[i]
