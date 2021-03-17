@@ -1,0 +1,22 @@
+write a program to find the sum of following series:
+1)s=1+x+x^2+x^3+...+x^n
+2)1-x+x^2-x^3+x^4-...x^n
+
+
+1)x=float(input("enter value of x:"))
+n=int(input("enter value of n (for x**n):"))
+s=0
+for a in range(n+1):
+    s=s+x**a
+print("sum of first",n,"terms:",s)
+
+
+2)x=int(input("enter value of x:"))
+n=int(input("enter the power(n):"))
+s=0
+sign= +1
+for a in range(n+1):
+    term=(x**a)*sign
+    s+=term
+    sign*= -1
+print("Sum of first",n,"terms:",s)
