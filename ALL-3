@@ -1,0 +1,44 @@
+# TO CHECK IF A STRING IS PALINDROME OR NOT
+s=str(input("ENTER:"))
+if(s==s[::-1]):
+    print(s,"is PALINDROME")
+else:
+    print(s,"is not a PALIDROME")
+    
+ >>> Input a list of numbers and test if a number is equal to the sum of the cubes of its digits. 
+ Find the smallest and largest such number from the given list of numbers. 
+val=eval(input("enter a list:"))
+list=[]
+s=len(val)
+for i in range(s):
+    num=val[i]
+    csum=0
+    while num:
+        digit=num%10
+        csum=csum+(digit*digit*digit)
+        num=num//10
+    if csum==val[i]:
+        list.append(val[i])
+print("largest no(=sum of its digits' cubes):",max(list))
+print("smallest no(=sum of its digits' cubes)",min(list))
+
+
+>>> Create a dictionary with the roll number, name and marks of n students in a
+class and display the names of students who have marks above 75. 
+n=int(input("how many students?:"))
+stu={}
+for i in range(1,n+1):
+    print("enter details of students:",(i))
+    rollno=int(input("roll no. :"))
+    name=str(input("enter name:"))
+    marks=float(input("enter marks:"))
+    d={"Roll_no":rollno,\
+       "Name":name,\
+       "Marks Obtained":marks}
+    key="stu"+str(i)
+    stu[key]=d
+if stu[key]["Marks Obtained"]>=90:
+    print(stu[key])
+
+
+
