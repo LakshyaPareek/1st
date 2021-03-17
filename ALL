@@ -1,0 +1,40 @@
+@@@@@@@ ARMSTRONG WALA PROJECT
+
+num=int(input("enter:"))
+sum=0
+temp=num
+nod=int(input("enter no. of digits:"))
+while(temp>0):
+    dgt=temp%10
+    sum=sum+dgt**nod
+    temp=temp//10
+if(num==sum):
+    print(num,"is armstrong")
+else:
+    print(num,"is not armstrong")
+		
+		
+######## TO CHECK IF THE THE NO. IS PRIME OR COMPOSITE'
+
+num=int(input("enter:"))
+lim=int(num/2)+1
+for i in range (2,lim):
+    rem=num%i
+    if rem==0:
+        print(num,"is a composite number")
+        break
+else:
+    print(num,"is a prime number")
+
+
+>>>> FACTORIAL WALA
+
+num=int(input("ENTER A NO.:"))
+fact=1
+a=1
+while a<=num:
+    fact=fact*a
+    a=a+1
+print("THE FACTORIAL OF",num,"IS",fact)
+
+
